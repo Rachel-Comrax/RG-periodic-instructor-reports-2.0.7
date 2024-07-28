@@ -1,4 +1,4 @@
 -r base.txt
 
 pytest==6.2.3
-edx-ccx-keys==1.2.0
+edx-ccx-keys==1.2.1
