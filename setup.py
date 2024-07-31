@@ -12,8 +12,7 @@ import os
 import re
 import sys
 
-from setuptools import setup
-
+from setuptools import setup, find_packages
 
 def get_version(*file_paths):
     """
@@ -72,10 +71,11 @@ setup(
     author="OpenCraft",
     author_email="help@opencraft.com",
     url="https://gitlab.com/opencraft/client/esme-learning/periodic-instructor-reports",
-    packages=[
+    packages=find_packages(
+        indlude=[
         "periodic_instructor_reports",
         "periodic_instructor_reports.migrations",
-    ],
+        ]),
     include_package_data=True,
     install_requires=load_requirements("requirements/base.txt"),
     license="AGPL 3.0",
