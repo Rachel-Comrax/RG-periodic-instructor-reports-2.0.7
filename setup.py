@@ -72,9 +72,9 @@ setup(
     author_email="help@opencraft.com",
     url="https://gitlab.com/opencraft/client/esme-learning/periodic-instructor-reports",
     packages=find_packages(
-        indlude=[
-        "periodic_instructor_reports",
-        "periodic_instructor_reports.migrations",
+        include=[
+            'periodic_instructor_reports*',
+            'periodic_instructor_reports.migrations*',
         ]),
     include_package_data=True,
     install_requires=load_requirements("requirements/base.txt"),
